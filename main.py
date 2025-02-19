@@ -1,14 +1,12 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-
 # Create a title and subtitle
 st.title('News Correlation Dashboard')
 
 # Define the file paths
-file_path = 'data/cleaned_data.csv'
-file_path2 = 'C:\\Users\\gecha\\OneDrive\\Documents\\news_correlation_10ac_week0\\Data\\domains_location.csv'
-file_path2 = file_path2.replace("\\", "/")
+file_path = '/home/getachew/Documents/Ten_Academy/Week_0/News_Correlation_Analysis/data/cleaned_data.csv'
+file_path2 = '/home/getachew/Documents/Ten_Academy/Week_0/News_Correlation_Analysis/data/domains_location.csv'
 
 # Load the cleaned data into a DataFrame
 cleaned_df = pd.read_csv(file_path)
@@ -45,14 +43,10 @@ ax.tick_params(axis='x', rotation=45)
 st.pyplot(fig)
 
 st.subheader("Media List")
-
-file_path2 = 'C:\\Users\\gecha\\OneDrive\\Documents\\news_correlation_10ac_week0\\Data\\domains_location.csv'
-file_path2 = file_path2.replace("\\", "/")
+file_path2 = '/home/getachew/Documents/Ten_Academy/Week_0/News_Correlation_Analysis/data/domains_location.csv'
 location_df = pd.read_csv(file_path2)
 
 location_df
-
-
 
 # Create some sample data (replace with your cleaned data)
 data = {'source_name': ['Reuters', 'BBC News', 'CNN', 'New York Times', 'Reuters', 'BBC News', 'CNN', 'Fox News']}
@@ -64,7 +58,6 @@ source_counts = df['source_name'].value_counts()
 # Get the source with the largest count of news articles
 largest_source = source_counts.idxmax()
 largest_count = source_counts.max()
-
 
 # Display top 10 sources
 st.subheader("Top 10 Websites with Most Articles")
