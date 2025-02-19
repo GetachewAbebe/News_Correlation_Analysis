@@ -1,4 +1,4 @@
-# News Correlation Project
+# News Correlation Analysis
 
 This project focuses on analyzing sentiment, topics, and reporting correlations among various global media agencies. It aims to evaluate candidates for the 12-week training program in Data Engineering (DE), Generative AI Engineering (AIE), and Machine Learning Engineering (MLE) at 10 Academy.
 
@@ -16,7 +16,7 @@ The project is divided into five tasks:
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/news_correlation_10ac_week0.git`
+1. Clone the repository: `git clone https://github.com/GetachewAbebe/News_Correlation_Analysis.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Obtain the dataset files (`data.csv` and `domains_location.csv`) and place them in the appropriate directories.
 
